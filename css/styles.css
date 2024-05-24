@@ -1,0 +1,961 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    color: wheat;
+}
+
+body {
+    background: #191818;
+}
+
+.contenido{
+    padding: 0 200px;
+    padding-top: 50px;
+}
+
+/*Header------>*/
+header {
+    background-color: rgba(0, 0, 0, 0.5);
+    background-size: cover;
+    position: fixed; 
+    width: 100%;
+}
+
+.header__texto {
+    background-image: url(./Lepantobanner.jpg);
+    background-size: cover;
+    padding-top: 250px;
+    font-size: 50px;
+    text-align: center;
+    color: white;
+    margin: auto;
+    height: 280px;
+}
+
+a{
+    padding-left: 20px;
+    padding-right: 30px;
+    padding: 15px;
+    text-decoration: none;
+}
+
+a:hover {
+    background-color: #A41818;
+    border-radius: 5rem;
+    
+}
+.subtitulo  {
+    background-color: #A41818;
+    padding: 10px 0;
+    width: 200px;
+    justify-content: center;
+    border-radius: 20px;
+    margin: 25px auto;
+}
+
+/* Barra de Navegacion (MENU) */
+
+
+label.toggle, [id^=drop]{
+    display: none;
+}
+
+nav{
+    margin: 0;
+    padding: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+#logo{
+    display: block;
+    padding: 0 30px;
+    float: left;
+    font-size: 30px;
+    line-height: 60px;
+    font-weight: bold;
+}
+
+nav ul{
+    float: right;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    position: relative;
+}
+
+nav ul li{
+    margin: 0px;
+    display: inline-block;
+    float: left;
+    
+}
+
+nav a{
+    display: block;
+    padding: 0 20px;
+    font-size: 20px;
+    line-height: 60px;
+    text-decoration: none;
+}
+
+#navegacion a:hover{
+    text-decoration: underline;
+}
+
+nav ul ul{
+    display: none;
+    position: absolute;
+    top: 60px;
+}
+
+nav ul li:hover >ul{
+    display: block;
+}
+
+/*Elementos del segundo nivel*/
+
+nav ul ul li{
+    width: 170px;
+    float: none;
+    display: block;
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+/*body------->*/
+
+strong{
+    background: none;
+}
+h1.titulos{
+    margin: 5px;
+    font-size: 50px;
+}
+h2{
+    font-size: 25px;
+    background: none;
+}
+div.cajon{
+    margin: 20px 10px;
+    display: flex;
+}
+div.cajita{
+    align-content: center;
+    border-radius: 2rem;
+    background: #2E2C2C;
+    height: 400px;
+    width: 400px;
+    margin: auto;
+    padding: 15px;
+    padding-right: 28px;
+}
+.imagenes{
+    border-radius: 50px;
+    background-color: #2E2C2C;
+    padding-top: 15px;
+    width: 350px;
+    height: 250px;
+} 
+p.parrafo{
+    background: none;
+    text-align: justify;
+    padding: 15px;
+    font-size: 20px;
+}
+.cajita1,.cajita3,.cajita2,.cajita4{
+    border-radius: 2rem;
+    display: flex;
+    margin: 10px;
+    background-color: #2E2C2C;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    padding: 30px;
+}
+.imagenes2{
+    width: 200px;
+    border-radius: 50%;
+    background: none;
+}
+.parte34{
+    position: relative;
+}
+.parte34 .cajon .cajita{
+    width: fit-content;
+    height: fit-content;
+    margin: 25px;
+    justify-content: center;
+}
+.cajon{
+    margin: -50px;
+    padding-left: -130%;
+    position: center;
+}
+.parte34 .cajon .cajita p{
+    font-size:x-large;
+}
+.parte34 .cajon .cajita h2{
+    font-size: xx-large;
+}
+.parte34 .cajon .cajita img{
+    height: 300px;
+    width: 400px;
+    border-radius: 2rem;
+} 
+.parte34 section .cajon {
+    flex-direction: column;
+    background-color: #2E2C2C;
+    border-radius: 2rem;
+    width: fit-content;
+}
+.parte34 section {
+    width: fit-content;
+    margin: auto;
+    align-content: center;
+}
+.parte34 section .cajon .cajita1 ,.parte34 section .cajon .cajita2 {
+    background-color: #191818;
+}
+
+.parteOmar{
+    background-image: url(./_93bbb229-de95-48c9-bff1-f1198eaf07b5.jpg);
+    border-radius: 2rem;
+    display: flex;
+    margin: 10px;
+    align-items: center;
+    padding: 30px;
+}
+
+.parteOmar>h1{
+    text-align: center;
+    color: black;
+}
+
+.parteOmar p{
+    color: black;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 2rem;
+
+}
+footer{
+    width: 100%;
+    border-top: white 1px dotted;
+}
+footer div .parrafo{
+    width: fit-content;
+    margin: auto;
+}
+
+/*Inicio Galeria*/
+
+#carouselExample {
+    margin-top: 25px;
+}
+
+.barra, .galeria-menu {
+    background-color: rgba(0, 0, 0, 0.5);
+    font-size: 30px;
+    display: flex;
+    padding: 20px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.barra a, .galeria-menu a {
+    padding-left: 20px;
+    padding-right: 30px;
+    padding: 15px;
+    text-decoration: none;
+    color: wheat; 
+}
+
+.barra a:hover, .galeria-menu a:hover {
+    background-color: #A41818;
+    border-radius: 5rem;
+    color: white; 
+}
+
+/* menu de la galeria */
+
+.galeria-menu {
+    list-style: none;
+    background-color: #191818; 
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+
+.header__texto1{
+    background-image: url(./Lepantobanner.jpg);
+    background-size: cover;
+    padding-top: 200px;
+    font-size: 400px;
+    color: white;
+    margin: auto;
+    height: 400px;
+}
+
+
+/*FinGaleria*/
+
+/*Formulario*/
+
+.formulario {
+    width: 400px;
+    background: #2E2C2C;
+    padding: 30px 60px;
+    margin: 100px auto;
+    border-radius: 4px;
+    color: white;
+}
+  
+.formulario h4 {
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+  
+.input {
+    width: 100%;
+    background: #2E2C2C;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 16px;
+    border: 1px solid #191818;
+    font-size: 18px;
+    color: white;
+}
+  
+.formulario .boton {
+    width: 100%;
+    background: #1f53c5;
+    border: none;
+    padding: 12px;
+    color: white;
+    margin: 16px 0;
+    font-size: 16px;
+}
+.formularioCheck{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 10px;
+}
+
+.input-grande{
+    text-align: left;
+    height: 200px;
+}
+/*FinFormulario*/  
+
+/*creadores*/
+.tarjeta{
+    height: 300px;
+    width: 800px;
+    padding: 25px;
+    margin: 25px auto;
+    display: flex;
+    background-color: #2E2C2C;
+    border-radius: 3rem;
+}
+h3{
+    font-size: 18px;
+}
+.persona{
+    display: inline-block;
+    height: 250px;
+    width: 250px;
+    border-radius: 50%;
+    padding-bottom: 10px;
+}
+.tarj1{
+    width: 300px;
+    padding-right: 25px;
+}
+
+.tarj2{
+    padding-left: 25px;
+    align-content: center;
+    height: 300px;
+    border-left-style:solid;
+    margin: auto;
+    width: 500px;
+}
+.tarj1 p{
+    font-size: 13px;
+}
+.tarj2 p{
+    padding: 15px 0;
+    text-align: left;
+    font-size: 20px;
+}
+.redes{
+    display: flex; 
+    width:fit-content;
+    margin: auto;
+}
+.redes a img{
+    margin: 5px;
+    width: 50px;
+    background-color: white;
+    border-radius: 10px;
+}
+/*FinCreadores*/
+
+/* responsive amigue*/
+
+@media (max-width: 1200px) {
+
+    .tarjeta{
+        height: 300px;
+        width: 600px;
+        padding: 25px;
+        margin: 25px auto;
+        display: flex;
+        background-color: #2E2C2C;
+        border-radius: 3rem;
+    }
+    h3{
+        font-size: 18px;
+    }
+    .persona{
+        display: inline-block;
+        height: 250px;
+        width: 250px;
+        border-radius: 50%;
+        padding-bottom: 10px;
+    }
+    .tarj1{
+        width: 300px;
+        padding-right: 25px;
+    }
+    
+    .tarj2{
+        padding-left: 25px;
+        align-content: center;
+        height: 300px;
+        border-left-style:solid;
+        margin: auto;
+        width: 500px;
+    }
+    .tarj1 p{
+        font-size: 13px;
+    }
+    .tarj2 p{
+        padding: 10px 0;
+        text-align: left;
+        font-size: 20px;
+    }
+    .redes{
+        display: flex; 
+        width:fit-content;
+        /* margin: auto; */
+        margin-bottom: 12px;
+    }
+    .redes a img{
+        margin: 2px;
+        width: 30px;
+        background-color: white;
+        border-radius: 10px;
+    }
+
+
+        .cajon {
+            flex-direction: column;
+            align-items: center;
+        }
+        .cajita {
+            width: 80%;
+            margin: 10px auto; 
+            padding: 10px; 
+            font-size: 14px;
+        }
+
+    .contenido {
+        padding: 0 50px;
+    }
+    .header__texto {
+        padding-top: 100px;
+        font-size: 25px;
+        height: 150px;
+    }
+    .barra {
+        font-size: 15px;
+    }
+    /*.subtitulo {
+        width: 100px;
+    }*/
+
+    .imagenes {
+        width: 250px;
+        height: 150px;
+    }
+    .imagenes2 {
+        width: 150px;
+        height: 150px;
+    }
+    .parte34 .cajon .cajita img {
+        height: 200px;
+        width: 300px;
+    }
+    .galeria>img {
+        height: 300px;
+    }
+    .galeria .colum img {
+        height: 150px;
+    }
+    .gale2 {
+        height: 200px;
+        width: 200px;
+    }
+    .galeria3 img {
+        height: 200px;
+        width: 300px;
+    }
+    .formulario {
+        width: 60%;
+        padding: 20px 40px;
+        margin: 50px auto;
+        font-size: 16px;
+    }
+   
+
+
+    .cajon > .parteOmar {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .cajita1, .cajita2, .cajita3 {
+        flex-direction: column;
+        align-items: center;
+        width: auto; 
+    }
+    .cajita1 h2, .cajita2 h2, .cajita3 h2 {
+        width: fit-content;
+        margin-bottom: 10px;
+        font-size: 20px;
+    }
+    .cajita1 p, .cajita2 p, .cajita3 p {
+        text-align: center;
+        font-size: 16px;
+    }
+    .cajita1 img, .cajita2 img, .cajita3 img {
+        order: 3;
+        margin-top: 10px;
+        width: 200px; 
+        height: auto; 
+    }
+
+    .cajita2 h2 {
+        order: -1;
+        margin-bottom: 10px;
+        font-size: 20px;
+    }
+    .cajita2 p, .cajita4 p {
+        text-align: center;
+        font-size: 16px; 
+    }
+
+    .cajon > .cajita {
+        margin: 25px;
+        width: 300px;
+    }
+    .cajon {
+        flex-direction: column;
+    }
+    .cajita {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+
+    nav {margin: 0;}
+
+    #logo{
+        display: inline-block;
+        padding: 0 0 0 20px;
+        text-align: center;
+        font-size: 25px;
+    }
+    nav ul li{
+        display: block;
+        width: 100%;
+    }
+    label.toggle{
+        display: block;
+        padding: 0 20px;
+        color: #fff;
+        font-size: 20px;
+        line-height: 60px;
+        text-decoration: none;
+        border: none;
+        cursor: pointer;
+    }
+    label.icono{
+        display: inline-block;
+        float: right;
+        font-size: 30px;
+    }
+    .toggle:hover{background-color: #A41818;
+        border-radius: 5rem;}
+
+    .menu{
+        display: none;
+    }
+    [id^=drop]:checked + ul{
+        display: block;
+        width: 100%;
+    }
+    .toggle + a{
+        display: none;
+    }
+    nav ul ul{
+        float: none;
+        position: static;
+    }
+    nav ul ul li{
+        display: block;
+        width: 100%;
+    }
+    nav ul ul ul li{position: static;}
+
+    nav ul ul li:hover >ul, 
+    nav ul li:hover >ul{display: none;}
+
+
+    nav ul ul.toggle, 
+    nav ul ul a{padding: 0 40px;}
+
+
+    nav ul ul ul a{padding: 0 80px;}
+
+    nav a:hover, 
+    nav ul ul ul a{background-color: #A41818;
+        border-radius: 5rem;}
+}
+
+
+@media (max-width: 780px) {
+    .tarjeta{
+        height: 80%;
+        width: 80%;
+        margin: 3%;
+        display: flex;
+        background-color: #2E2C2C;
+        border-radius: 3rem;
+        flex-wrap: wrap;
+    }
+    h3{
+        font-size: 18px;
+    }
+    .persona{
+        display: inline-block;
+        height: 70%;
+        width: 90%;
+        border-radius: 50%;
+        padding-bottom: 10px;
+    }
+    .tarj1{
+        width: 300px;
+        padding-bottom: 20px;
+        text-align: center; 
+    }
+    
+    .tarj2{
+        align-content: center;
+        height: 300px;
+        border-left-style:solid;
+        margin: auto;
+        width: 500px;
+    }
+
+    .tarjeta>.tarj1{
+        text-align: center;
+        align-items: center;
+        margin: auto auto auto auto;
+    }
+
+    .tarjeta>.tarj1  img{
+        width: 230px;
+    }
+    
+
+   .cajita2>img{
+    width: 200px;
+   }
+
+   .cajita3>img{
+    width: 200px;
+   }
+
+    .cajon {
+        flex-direction: column;
+        align-items: center;
+    }
+    .cajita {
+        width: 80%;
+        margin: 10px auto; 
+        padding: 10px; 
+        font-size: 14px;
+    }
+
+    .galeria, .galeria2, .galeria3 {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .galeria img, .galeria2 img, .galeria3 img {
+        width: 200px;
+        height: 200px;
+        margin: 5px;
+    }
+
+
+    .cajon>.parteOmar{
+        flex-direction: column;
+    }
+
+    .cajita1, .cajita2, .cajita3 {
+        flex-direction: column;
+        align-items: center;
+    }
+    .cajita1 h2, .cajita2 h2, .cajita3 h2 {
+        width: fit-content;
+        margin-bottom: 10px;
+    }
+    .cajita1 p, .cajita2 p, .cajita3 p {
+        text-align: center;
+    }
+    .cajita1 img, .cajita2 img, .cajita3 img {
+        order: 3;
+        margin-top: 10px;
+    }
+
+    .cajita1>img{
+        width: 200px;
+    }
+
+    .cajita2 h2 {
+        order: -1;
+        margin-bottom: 10px;
+    }
+    .cajita2 p, .cajita4 p {
+        text-align: center; 
+    }
+
+   .cajon>.cajita{
+    margin: 25px;
+    width: 300px;
+   }
+    .cajon {
+        flex-direction: column;
+    }
+    .cajita {
+        width: 100px;
+        margin: 10px 10px 10px 10px;
+    }
+
+    .contenido {
+        padding: 0 50px;
+    }
+    .header__texto {
+        padding-top: 100px;
+        font-size: 25px;
+        height: 150px;
+    }
+    .barra {
+        font-size: 15px;
+    }
+    .imagenes {
+        width: 250px;
+        height: 150px;
+    }
+    .imagenes2 {
+        width: 150px;
+        height: 150px;
+    }
+    .parte34 .cajon .cajita img {
+        height: 200px;
+        width: 300px;
+    }
+    .galeria>img {
+        height: 300px;
+    }
+    .galeria .colum img {
+        height: 150px;
+    }
+    .gale2 {
+        height: 200px;
+        width: 200px;
+    }
+    .galeria3 img {
+        height: 200px;
+        width: 300px;
+    }
+    .formulario {
+        padding: 20px 40px;
+        margin: 50px auto;
+        font-size: 16px;
+    }
+}
+
+
+
+/*responsive pero de menos tamaño*/
+@media (max-width: 400px) {
+
+    .cajon {
+        flex-direction: column;
+        align-items: center;
+    }
+    .cajita {
+        width: 80%;
+        margin: 10px auto; 
+        padding: 10px; 
+        font-size: 12px;
+    }
+
+
+    .galeria, .galeria2, .galeria3 {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .galeria img, .galeria2 img, .galeria3 img {
+        width: 120px;
+        height: 120px;
+        margin: 3px;
+    }
+
+    .cajon>.parteOmar{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .cajita1, .cajita2, .cajita3 {
+        flex-direction: column;
+        align-items: center;
+    }
+    .cajita1 h2, .cajita2 h2, .cajita3 h2 {
+        width: fit-content;
+        margin-bottom: 10px; 
+    }
+    .cajita1 p, .cajita2 p, .cajita3 p {
+        text-align: center;
+    }
+    .cajita1 img, .cajita2 img, .cajita3 img {
+        order: 3;
+        margin-top: 10px;
+    }
+
+    .cajita2 h2{
+        order: -1;
+        margin-bottom: 10px;
+    }
+    .cajita2 p{
+        text-align: center;
+    }
+
+    .cajon>.cajita{
+        margin: 15px;
+        width: 200px;
+    }
+
+
+    .parte12>.cajita{
+        margin-bottom: 10px;
+    }
+
+    .cajon {
+        flex-direction: column;
+    }
+    .cajita {
+        width: 100%;
+        margin: 10px 0;
+    }
+    
+    .contenido {
+        padding: 0 20px;
+    }
+    .header__texto {
+        padding-top: 80px;
+        font-size: 20px;
+        height: 120px;
+    }
+    .barra {
+        font-size: 12px;
+    }
+
+    
+    .imagenes {
+        width: 200px;
+        height: 120px;
+    }
+    .parte34 .cajon .cajita img {
+        height: 150px;
+        width: 100px;
+    }
+    .parte34 .cajon .cajita {
+        width: 90%;
+    }
+
+    .galeria>img {
+        height: 200px;
+    }
+    .galeria .colum img {
+        height: 100px;
+    }
+    .gale2 {
+        height: 150px;
+        width: 150px;
+    }
+    .galeria3 img {
+        height: 150px;
+        width: 200px;
+    }
+    .formulario {
+        padding: 20px 30px;
+        margin: 30px auto;
+        font-size: 14px;
+    }
+
+    .tarj1{
+        width: 300px;
+        padding-bottom: 0;
+    }
+    
+    .tarj2{
+        align-content: center;
+        height: 300px;
+        border-left-style:solid;
+        margin: auto;
+        width: 500px;
+    }
+
+    .tarj1 p{
+        font-size: 14px;
+    }
+    .tarj2 p{
+        padding: 1%;
+        font-size: 14px;
+    }
+    .redes{
+        display: flex; 
+        width:fit-content;
+        margin: auto;
+    }
+    .redes a img{
+        margin: 2px;
+        width: 30px;
+        background-color: white;
+        border-radius: 10px;
+    }
+
+    p.parrafo {
+        padding: 10px;
+        font-size: 14px;
+    }
+}
+
